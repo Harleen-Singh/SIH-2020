@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class FeedbackClassifierViewController: UIViewController {
 
@@ -20,6 +21,18 @@ class FeedbackClassifierViewController: UIViewController {
     
     @IBAction func sendPressed(_ sender: UIButton) {
     }
+    
+    @IBAction func LogoutButtonPressed(_ sender: UIBarButtonItem) {
+        
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+        
+    }
+    
     
 
 }

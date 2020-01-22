@@ -11,10 +11,10 @@
 		680218E123D4D14B005CAD4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218DD23D4D14A005CAD4C /* LoginViewController.swift */; };
 		680218E223D4D14B005CAD4C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218DE23D4D14B005CAD4C /* RegisterViewController.swift */; };
 		680218E323D4D14B005CAD4C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218DF23D4D14B005CAD4C /* WelcomeViewController.swift */; };
-		680218E423D4D14B005CAD4C /* FeedbackClassifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218E023D4D14B005CAD4C /* FeedbackClassifierViewController.swift */; };
+		680218E423D4D14B005CAD4C /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218E023D4D14B005CAD4C /* FeedbackViewController.swift */; };
 		680218E623D4D3B4005CAD4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218E523D4D3B4005CAD4C /* Constants.swift */; };
-		680218E823D4D586005CAD4C /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218E723D4D586005CAD4C /* FeedbackViewController.swift */; };
 		680218EA23D4D63E005CAD4C /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218E923D4D63E005CAD4C /* RatingViewController.swift */; };
+		6817B52923D89E6300E0F4AC /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6817B52823D89E6300E0F4AC /* Feedback.swift */; };
 		68B1BC7123D55BAF0048EB49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68B1BC7023D55BAE0048EB49 /* GoogleService-Info.plist */; };
 		68B5B25D23D4CD8300667EED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5B25C23D4CD8300667EED /* AppDelegate.swift */; };
 		68B5B25F23D4CD8300667EED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5B25E23D4CD8300667EED /* SceneDelegate.swift */; };
@@ -31,10 +31,10 @@
 		680218DD23D4D14A005CAD4C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		680218DE23D4D14B005CAD4C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		680218DF23D4D14B005CAD4C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		680218E023D4D14B005CAD4C /* FeedbackClassifierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackClassifierViewController.swift; sourceTree = "<group>"; };
+		680218E023D4D14B005CAD4C /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		680218E523D4D3B4005CAD4C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		680218E723D4D586005CAD4C /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		680218E923D4D63E005CAD4C /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		6817B52823D89E6300E0F4AC /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		68B1BC7023D55BAE0048EB49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		68B5B25923D4CD8300667EED /* Trackify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B5B25C23D4CD8300667EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,15 +71,22 @@
 		680218DA23D4D090005CAD4C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				680218E023D4D14B005CAD4C /* FeedbackClassifierViewController.swift */,
+				680218E023D4D14B005CAD4C /* FeedbackViewController.swift */,
 				680218DD23D4D14A005CAD4C /* LoginViewController.swift */,
 				680218DE23D4D14B005CAD4C /* RegisterViewController.swift */,
 				680218DF23D4D14B005CAD4C /* WelcomeViewController.swift */,
 				68B5B26023D4CD8300667EED /* OutputSelectViewController.swift */,
-				680218E723D4D586005CAD4C /* FeedbackViewController.swift */,
 				680218E923D4D63E005CAD4C /* RatingViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6817B52A23D89E8B00E0F4AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6817B52823D89E6300E0F4AC /* Feedback.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		68B5B25023D4CD8300667EED = {
@@ -113,6 +120,7 @@
 				68B5B26A23D4CD9400667EED /* LaunchScreen.storyboard */,
 				68B5B26D23D4CD9400667EED /* Info.plist */,
 				68B5B26523D4CD8300667EED /* Trackify_iOS.xcdatamodeld */,
+				6817B52A23D89E8B00E0F4AC /* Models */,
 			);
 			path = "Trackify-iOS";
 			sourceTree = "<group>";
@@ -252,9 +260,9 @@
 			files = (
 				68B5B26723D4CD8300667EED /* Trackify_iOS.xcdatamodeld in Sources */,
 				680218EA23D4D63E005CAD4C /* RatingViewController.swift in Sources */,
+				6817B52923D89E6300E0F4AC /* Feedback.swift in Sources */,
 				68B5B26123D4CD8300667EED /* OutputSelectViewController.swift in Sources */,
-				680218E423D4D14B005CAD4C /* FeedbackClassifierViewController.swift in Sources */,
-				680218E823D4D586005CAD4C /* FeedbackViewController.swift in Sources */,
+				680218E423D4D14B005CAD4C /* FeedbackViewController.swift in Sources */,
 				68B5B25D23D4CD8300667EED /* AppDelegate.swift in Sources */,
 				680218E223D4D14B005CAD4C /* RegisterViewController.swift in Sources */,
 				680218E123D4D14B005CAD4C /* LoginViewController.swift in Sources */,

@@ -9,11 +9,17 @@
 import UIKit
 import FirebaseAuth
 
-class OutputSelectViewController: UIViewController {
+class OutputSelectViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+    
+    @IBOutlet weak var reviewIdSelector: UIPickerView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        reviewIdSelector.dataSource = self
+        reviewIdSelector.delegate = self
+        
     }
     
     @IBAction func LogoutButtonPressed(_ sender: UIBarButtonItem) {
@@ -28,6 +34,17 @@ class OutputSelectViewController: UIViewController {
     }
     
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 31
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print(row)
+    }
 
 }
 

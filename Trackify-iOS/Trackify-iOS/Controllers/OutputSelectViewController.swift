@@ -15,14 +15,16 @@ class OutputSelectViewController: UIViewController,UIPickerViewDataSource,UIPick
     @IBOutlet weak var productIdTextView: UITextField!
     
     var classifier = ["Fashion","TBD","TBD","TBD"]
+    var feedback: [Feedback] = []
     
-    var feedbacks: [Feedback] = [Feedback(comment: "", sentiment: "")]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         reviewIdSelector.dataSource = self
         reviewIdSelector.delegate = self
+        feedback = [Feedback(comment: " ", sentiment:" ")]
         
     }
     
@@ -64,10 +66,10 @@ class OutputSelectViewController: UIViewController,UIPickerViewDataSource,UIPick
         
         let feedbackManager = FeedbackManager(Id: productId)
         
-        feedbackManager.fetchFeedback()
+        feedback = feedbackManager.fetchFeedback()
         
-        print(feedbackManager.feedbackURL)
         
+        print(feedback.count)
         
         
         self.performSegue(withIdentifier: "goToFeedbacks", sender: self)
@@ -90,14 +92,14 @@ class OutputSelectViewController: UIViewController,UIPickerViewDataSource,UIPick
             
             let destinationVC = segue.destination as! FeedbackViewController
             
-            destinationVC.feedbacks = feedbacks
+            //destinationVC.feedbacks = feedback
             
         }
         
         if segue.identifier == "goToOverallRating" {
             
             let destinationVC = segue.destination as! RatingViewController
-            destinationVC.overallRatingValue = "0.0"
+            
             
         }
         

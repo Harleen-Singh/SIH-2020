@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct Feedback {
-    var comment: String
-    var sentiment: String
-}
+//struct Feedback {
+//    var comment: String
+//    var sentiment: String
+//    
+//    
+//}

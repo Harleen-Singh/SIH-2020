@@ -19,12 +19,22 @@ class FeedbackManager {
     }
     
     
+    struct Feedback {
+        var comment: String
+        var sentiment: String
+        
+        
+    }
+    
     func fetchFeedback() {
         let urlString = feedbackURL
         performRequest(urlString: urlString)
+        
+        
+        
     }
     
-    func performRequest(urlString: String) {
+    func performRequest(urlString: String)  {
         
         if let url = URL(string: urlString) {
             
@@ -44,6 +54,7 @@ class FeedbackManager {
             }
             
             task.resume()
+            
             
         }
         
@@ -70,13 +81,14 @@ class FeedbackManager {
 //                feedback[j].comment = decodedData.reviewText[i]
 //                feedback[j].sentiment = decodedData.prediction[i]
                 let feed = Feedback(comment: decodedData.reviewText[i], sentiment: decodedData.prediction[i])
-                
+
                 feedback.append(feed)
                 i = i + 1
 
             }
+//            return feedback
             
-           //print(feedback[2].comment)
+            
             
             
 //            while(i < decodedData.productId.count)
@@ -107,5 +119,6 @@ class FeedbackManager {
         
         
     }
+    
     
 }

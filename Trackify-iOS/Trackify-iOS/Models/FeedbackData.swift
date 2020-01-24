@@ -8,5 +8,10 @@
 
 import Foundation
 
-struct feedbackData: Decodable {
+struct FeedbackData: Codable {
+    
+    var productId: [String]
+    var reviewText: [String]
+    var classification: [String]
+    var prediction: [String]
 }

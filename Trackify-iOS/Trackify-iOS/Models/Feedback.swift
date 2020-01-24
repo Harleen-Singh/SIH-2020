@@ -9,6 +9,6 @@
 import Foundation
 
 struct Feedback {
-    let comment: String
-    let sentiment: String
+    var comment: String
+    var sentiment: String
 }

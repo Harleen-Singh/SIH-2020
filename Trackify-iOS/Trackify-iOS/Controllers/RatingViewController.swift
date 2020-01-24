@@ -10,8 +10,19 @@ import UIKit
 import FirebaseAuth
 
 class RatingViewController: UIViewController {
+    
+    @IBOutlet weak var overallRatingValueLabel: UILabel!
+    
+    var overallRatingValue = "0.0"
+    
     override func viewDidLoad() {
+        
+        overallRatingValueLabel.text = String(overallRatingValue)
+        
     }
+    
+    
+    
     
     @IBAction func LogoutButtonPressed(_ sender: UIBarButtonItem) {
         

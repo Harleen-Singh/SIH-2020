@@ -12,8 +12,12 @@ import FirebaseAuth
 class OutputSelectViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
     @IBOutlet weak var reviewIdSelector: UIPickerView!
+    @IBOutlet weak var productIdTextView: UITextField!
     
-
+    var classifier = ["Fashion","TBD","TBD","TBD"]
+    
+    var feedbacks: [Feedback] = [Feedback(comment: "", sentiment: "")]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
@@ -39,12 +43,67 @@ class OutputSelectViewController: UIViewController,UIPickerViewDataSource,UIPick
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 31
+        return classifier.count
     }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        // put here heading array
+        return classifier[row]
+    }
+    
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print(row)
     }
+    
+    @IBAction func feedbacksButtonPressed(_ sender: UIButton) {
+        
+        // find messages
+        
+        let productId = productIdTextView.text!
+        
+        let feedbackManager = FeedbackManager(Id: productId)
+        
+        feedbackManager.fetchFeedback()
+        
+        print(feedbackManager.feedbackURL)
+        
+        
+        
+        self.performSegue(withIdentifier: "goToFeedbacks", sender: self)
+        
+        
+        
+    }
+    
+    @IBAction func overallRatingButtonPressed(_ sender: UIButton) {
+        
+        //find overall Rating
+        
+        self.performSegue(withIdentifier: "goToOverallRating", sender: self)
+        
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToFeedbacks" {
+            
+            let destinationVC = segue.destination as! FeedbackViewController
+            
+            destinationVC.feedbacks = feedbacks
+            
+        }
+        
+        if segue.identifier == "goToOverallRating" {
+            
+            let destinationVC = segue.destination as! RatingViewController
+            destinationVC.overallRatingValue = "0.0"
+            
+        }
+        
+    }
+    
+    
 
 }
 

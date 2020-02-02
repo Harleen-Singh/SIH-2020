@@ -16,10 +16,10 @@ class FeedbackViewController: UIViewController {
     
     
     var feedbacks: [Feedback] = [
-        Feedback(comment: "I really like the new design of your website!", sentiment:"Positive"),
-        Feedback(comment: "I’m not sure if I like the new design", sentiment:"Neutral"),
-        Feedback(comment: "The older interface was much simpler", sentiment:"Negative"),
-        Feedback(comment: "The new design is awful!", sentiment:"Negative")
+        Feedback(comment: "Waaay too small. Will use for future child", sentiment:"Positive"),
+        Feedback(comment: "These insoles help my heels feel much better.", sentiment:"Positive"),
+        Feedback(comment: "As described", sentiment:"Positive"),
+        Feedback(comment: "I just wish they would not roll down.", sentiment:"Negative")
 
     ]
     

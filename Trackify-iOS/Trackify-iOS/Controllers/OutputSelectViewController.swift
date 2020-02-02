@@ -15,7 +15,7 @@ class OutputSelectViewController: UIViewController,UIPickerViewDataSource,UIPick
     @IBOutlet weak var productIdTextView: UITextField!
     
     var classifier = ["Fashion","TBD","TBD","TBD"]
-    var feedback: [Feedback] = []
+    var feedback: [Feedback] = [Feedback(comment: " ", sentiment:" ")]
     
     
     
@@ -66,7 +66,7 @@ class OutputSelectViewController: UIViewController,UIPickerViewDataSource,UIPick
         
         let feedbackManager = FeedbackManager(Id: productId)
         
-        feedback = feedbackManager.fetchFeedback()
+        //feedbackManager.fetchFeedback()
         
         
         print(feedback.count)

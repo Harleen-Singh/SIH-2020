@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680218DC23D4D0D0005CAD4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680218DB23D4D0D0005CAD4C /* Main.storyboard */; };
+		680218E123D4D14B005CAD4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218DD23D4D14A005CAD4C /* LoginViewController.swift */; };
+		680218E323D4D14B005CAD4C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218DF23D4D14B005CAD4C /* WelcomeViewController.swift */; };
+		680218E423D4D14B005CAD4C /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218E023D4D14B005CAD4C /* FeedbackViewController.swift */; };
+		680218E623D4D3B4005CAD4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218E523D4D3B4005CAD4C /* Constants.swift */; };
+		680218EA23D4D63E005CAD4C /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680218E923D4D63E005CAD4C /* RatingViewController.swift */; };
+		6817B52923D89E6300E0F4AC /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6817B52823D89E6300E0F4AC /* Feedback.swift */; };
+		6817B52C23D8BF3C00E0F4AC /* FeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6817B52B23D8BF3C00E0F4AC /* FeedbackManager.swift */; };
+		6817B52E23D8CF5A00E0F4AC /* FeedbackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6817B52D23D8CF5A00E0F4AC /* FeedbackData.swift */; };
+		68B1BC7123D55BAF0048EB49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68B1BC7023D55BAE0048EB49 /* GoogleService-Info.plist */; };
+		68B5B25D23D4CD8300667EED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5B25C23D4CD8300667EED /* AppDelegate.swift */; };
+		68B5B25F23D4CD8300667EED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5B25E23D4CD8300667EED /* SceneDelegate.swift */; };
+		68B5B26123D4CD8300667EED /* OutputSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5B26023D4CD8300667EED /* OutputSelectViewController.swift */; };
+		68B5B26723D4CD8300667EED /* Trackify_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68B5B26523D4CD8300667EED /* Trackify_iOS.xcdatamodeld */; };
+		68B5B26923D4CD9400667EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B5B26823D4CD9400667EED /* Assets.xcassets */; };
+		68B5B26C23D4CD9400667EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B5B26A23D4CD9400667EED /* LaunchScreen.storyboard */; };
+		CD2026FBAA7AE1F56885C841 /* Pods_Trackify_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF2F14745C1F7AA2FDB7D26 /* Pods_Trackify_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42127A4342AF617448D0B198 /* Pods-Trackify-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trackify-iOS.release.xcconfig"; path = "Target Support Files/Pods-Trackify-iOS/Pods-Trackify-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		680218DB23D4D0D0005CAD4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		680218DD23D4D14A005CAD4C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		680218DF23D4D14B005CAD4C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		680218E023D4D14B005CAD4C /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		680218E523D4D3B4005CAD4C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		680218E923D4D63E005CAD4C /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		6817B52823D89E6300E0F4AC /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		6817B52B23D8BF3C00E0F4AC /* FeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackManager.swift; sourceTree = "<group>"; };
+		6817B52D23D8CF5A00E0F4AC /* FeedbackData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackData.swift; sourceTree = "<group>"; };
+		68B1BC7023D55BAE0048EB49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68B5B25923D4CD8300667EED /* Trackify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B5B25C23D4CD8300667EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68B5B25E23D4CD8300667EED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68B5B26023D4CD8300667EED /* OutputSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputSelectViewController.swift; sourceTree = "<group>"; };
+		68B5B26623D4CD8300667EED /* Trackify_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trackify_iOS.xcdatamodel; sourceTree = "<group>"; };
+		68B5B26823D4CD9400667EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68B5B26B23D4CD9400667EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68B5B26D23D4CD9400667EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A70A51CD74B1965AAF0C313 /* Pods-Trackify-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trackify-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Trackify-iOS/Pods-Trackify-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DEF2F14745C1F7AA2FDB7D26 /* Pods_Trackify_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trackify_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68B5B25623D4CD8300667EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2026FBAA7AE1F56885C841 /* Pods_Trackify_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		680218D923D4D04C005CAD4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				680218DB23D4D0D0005CAD4C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		680218DA23D4D090005CAD4C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				680218E023D4D14B005CAD4C /* FeedbackViewController.swift */,
+				680218DD23D4D14A005CAD4C /* LoginViewController.swift */,
+				680218DF23D4D14B005CAD4C /* WelcomeViewController.swift */,
+				68B5B26023D4CD8300667EED /* OutputSelectViewController.swift */,
+				680218E923D4D63E005CAD4C /* RatingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6817B52A23D89E8B00E0F4AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6817B52823D89E6300E0F4AC /* Feedback.swift */,
+				6817B52B23D8BF3C00E0F4AC /* FeedbackManager.swift */,
+				6817B52D23D8CF5A00E0F4AC /* FeedbackData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68B5B25023D4CD8300667EED = {
+			isa = PBXGroup;
+			children = (
+				68B5B25B23D4CD8300667EED /* Trackify-iOS */,
+				68B5B25A23D4CD8300667EED /* Products */,
+				882053E29D84EA2CA3B1D040 /* Pods */,
+				E7BC1F7A314DF3105C8C7EF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68B5B25A23D4CD8300667EED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68B5B25923D4CD8300667EED /* Trackify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68B5B25B23D4CD8300667EED /* Trackify-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				68B1BC7023D55BAE0048EB49 /* GoogleService-Info.plist */,
+				680218E523D4D3B4005CAD4C /* Constants.swift */,
+				68B5B25C23D4CD8300667EED /* AppDelegate.swift */,
+				68B5B25E23D4CD8300667EED /* SceneDelegate.swift */,
+				680218DA23D4D090005CAD4C /* Controllers */,
+				680218D923D4D04C005CAD4C /* Views */,
+				68B5B26823D4CD9400667EED /* Assets.xcassets */,
+				68B5B26A23D4CD9400667EED /* LaunchScreen.storyboard */,
+				68B5B26D23D4CD9400667EED /* Info.plist */,
+				68B5B26523D4CD8300667EED /* Trackify_iOS.xcdatamodeld */,
+				6817B52A23D89E8B00E0F4AC /* Models */,
+			);
+			path = "Trackify-iOS";
+			sourceTree = "<group>";
+		};
+		882053E29D84EA2CA3B1D040 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A70A51CD74B1965AAF0C313 /* Pods-Trackify-iOS.debug.xcconfig */,
+				42127A4342AF617448D0B198 /* Pods-Trackify-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7BC1F7A314DF3105C8C7EF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF2F14745C1F7AA2FDB7D26 /* Pods_Trackify_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68B5B25823D4CD8300667EED /* Old-Trackify-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B5B27023D4CD9400667EED /* Build configuration list for PBXNativeTarget "Old-Trackify-iOS" */;
+			buildPhases = (
+				0A562C8B08CC185EA00EF4FC /* [CP] Check Pods Manifest.lock */,
+				68B5B25523D4CD8300667EED /* Sources */,
+				68B5B25623D4CD8300667EED /* Frameworks */,
+				68B5B25723D4CD8300667EED /* Resources */,
+				E0193D2C0844807306FC889C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Old-Trackify-iOS";
+			productName = "Trackify-iOS";
+			productReference = 68B5B25923D4CD8300667EED /* Trackify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68B5B25123D4CD8300667EED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Harleen Singh";
+				TargetAttributes = {
+					68B5B25823D4CD8300667EED = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 68B5B25423D4CD8300667EED /* Build configuration list for PBXProject "Old-Trackify-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68B5B25023D4CD8300667EED;
+			productRefGroup = 68B5B25A23D4CD8300667EED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68B5B25823D4CD8300667EED /* Old-Trackify-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68B5B25723D4CD8300667EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680218DC23D4D0D0005CAD4C /* Main.storyboard in Resources */,
+				68B1BC7123D55BAF0048EB49 /* GoogleService-Info.plist in Resources */,
+				68B5B26C23D4CD9400667EED /* LaunchScreen.storyboard in Resources */,
+				68B5B26923D4CD9400667EED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A562C8B08CC185EA00EF4FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trackify-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0193D2C0844807306FC889C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trackify-iOS/Pods-Trackify-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trackify-iOS/Pods-Trackify-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trackify-iOS/Pods-Trackify-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68B5B25523D4CD8300667EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B5B26723D4CD8300667EED /* Trackify_iOS.xcdatamodeld in Sources */,
+				680218EA23D4D63E005CAD4C /* RatingViewController.swift in Sources */,
+				6817B52923D89E6300E0F4AC /* Feedback.swift in Sources */,
+				68B5B26123D4CD8300667EED /* OutputSelectViewController.swift in Sources */,
+				6817B52E23D8CF5A00E0F4AC /* FeedbackData.swift in Sources */,
+				6817B52C23D8BF3C00E0F4AC /* FeedbackManager.swift in Sources */,
+				680218E423D4D14B005CAD4C /* FeedbackViewController.swift in Sources */,
+				68B5B25D23D4CD8300667EED /* AppDelegate.swift in Sources */,
+				680218E123D4D14B005CAD4C /* LoginViewController.swift in Sources */,
+				68B5B25F23D4CD8300667EED /* SceneDelegate.swift in Sources */,
+				680218E323D4D14B005CAD4C /* WelcomeViewController.swift in Sources */,
+				680218E623D4D3B4005CAD4C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68B5B26A23D4CD9400667EED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B5B26B23D4CD9400667EED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68B5B26E23D4CD9400667EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68B5B26F23D4CD9400667EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68B5B27123D4CD9400667EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A70A51CD74B1965AAF0C313 /* Pods-Trackify-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37RX5A56JB;
+				INFOPLIST_FILE = "Trackify-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HarleenSingh.Old-Trackify-iOS";
+				PRODUCT_NAME = Trackify;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68B5B27223D4CD9400667EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42127A4342AF617448D0B198 /* Pods-Trackify-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37RX5A56JB;
+				INFOPLIST_FILE = "Trackify-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HarleenSingh.Old-Trackify-iOS";
+				PRODUCT_NAME = Trackify;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68B5B25423D4CD8300667EED /* Build configuration list for PBXProject "Old-Trackify-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B5B26E23D4CD9400667EED /* Debug */,
+				68B5B26F23D4CD9400667EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B5B27023D4CD9400667EED /* Build configuration list for PBXNativeTarget "Old-Trackify-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B5B27123D4CD9400667EED /* Debug */,
+				68B5B27223D4CD9400667EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		68B5B26523D4CD8300667EED /* Trackify_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68B5B26623D4CD8300667EED /* Trackify_iOS.xcdatamodel */,
+			);
+			currentVersion = 68B5B26623D4CD8300667EED /* Trackify_iOS.xcdatamodel */;
+			path = Trackify_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 68B5B25123D4CD8300667EED /* Project object */;
+}

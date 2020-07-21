@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Trackify-iOS.xcodeproj">
+      location = "group:/Users/uiet_mac3/Desktop/SIH-2020/Old-Trackify-iOS/Old-Trackify-iOS.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

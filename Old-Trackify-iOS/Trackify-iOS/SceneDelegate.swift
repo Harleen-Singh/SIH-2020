@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Trackify-iOS
 //
-//  Created by UIET_MAC3 on 2/8/20.
+//  Created by UIET_MAC3 on 1/19/20.
 //  Copyright © 2020 Harleen Singh. All rights reserved.
 //
 
@@ -48,7 +48,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-       // (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 
